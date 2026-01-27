@@ -268,6 +268,11 @@
     <MarkersSymbolizer file="symbols/amenity/shelter.svg" width="16" height="16" fill="&poi_blue;" allow-overlap="true"/>
     <TextSymbolizer fontset-name="sans-oblique" size="10" fill="&poi_blue;" halo-radius="2" halo-fill="rgba(255,255,255,0.7)" placement="point" dy="10" wrap-width="100" wrap-before="true">[name] + '\n' + [ele]</TextSymbolizer>
   </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[tourism]='information' <!-- FIXME and [information]='guidepost' when the information column gets added--></Filter>
+      <PointSymbolizer file="symbols/tourism/guidepost.png"/>
+    </Rule>
   <Rule>
 		&maxscale_zoom13;
 		&minscale_zoom15;
@@ -315,12 +320,10 @@
 		<TextSymbolizer fontset-name="sans-oblique" size="10" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" placement="point" dy="6" wrap-width="100" wrap-before="true">[name]</TextSymbolizer>
 	</Rule>
 
-<!--	<Rule>
-		&maxscale_zoom16;
-		&minscale_zoom18;
- 		<Filter>([amenity] = 'pharmacy') </Filter>
-		<PointSymbolizer file="symbols/pharmacy.png"/>
-	</Rule>
--->
-
+  <!-- black text with elevation below unnamed poi -->
+  <Rule>
+    <Filter>[tourism] = 'viewpoint' or [natural]='spring' or [amenity] = 'parking' or [tourism] = 'information'</Filter>
+    &maxscale_zoom16;
+    <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+  </Rule>
 </Style>
