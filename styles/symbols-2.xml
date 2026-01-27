@@ -263,6 +263,12 @@
   <Rule>
     &maxscale_zoom15;
     &minscale_zoom18;
+    <Filter>([tourism] = 'picnic_site') </Filter>
+    <MarkersSymbolizer file="symbols/tourism/picnic_site.svg" width="16" height="16" fill="&poi_blue;"/>
+  </Rule>
+  <Rule>
+    &maxscale_zoom15;
+    &minscale_zoom18;
     <Filter>[amenity] = 'parking'</Filter>
     <PointSymbolizer file="symbols/amenity/parking.png"/>
     <TextSymbolizer fontset-name="sans-oblique" size="10" fill="&poi_blue;" halo-radius="2" halo-fill="rgba(255,255,255,0.7)" placement="point" dy="10" wrap-width="100" wrap-before="true">[ele]</TextSymbolizer>
