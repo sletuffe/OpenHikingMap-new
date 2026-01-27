@@ -19,7 +19,7 @@
   </Rule>
 
     <Rule>
-	    <Filter>([highway] = 'footway' or [highway] = 'path' or [highway] = 'bridleway' ) 
+	    <Filter>([highway] = 'footway' or [highway] = 'path') 
 		    and ([sac_scale]='demanding_mountain_hiking' 
 		    or [sac_scale]='alpine_hiking') 
 		    and (not [trail_visibility]='intermediate' 
@@ -30,7 +30,7 @@
 	    &maxscale_zoom14;
 	    <LineSymbolizer stroke-linejoin="round" stroke-opacity="1" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="2"/></Rule>
     <Rule>
-	    <Filter>([highway] = 'footway' or [highway] = 'path' or [highway] = 'bridleway') 
+	    <Filter>([highway] = 'footway' or [highway] = 'path') 
 		    and ([sac_scale]='demanding_alpine_hiking' 
 		    or [sac_scale]='difficult_alpine_hiking') 
 		    and (not [trail_visibility]='intermediate' 
@@ -43,7 +43,7 @@
     <!-- le cas "non special" n'est pas identifie par un elsefilter (il n'y a pas que les path) mais c'est 
 	 a peut pret ca-->
     <Rule>
-	    <Filter>([highway] = 'footway' or [highway] = 'path' or [highway] = 'bridleway') 
+	    <Filter>([highway] = 'footway' or [highway] = 'path') 
 		    and 
 		    (not [sac_scale]='demanding_mountain_hiking' 
 		    and not [sac_scale]='alpine_hiking' 
@@ -67,7 +67,7 @@
     
     
     <Rule>
-	    <Filter>([highway] = 'footway' or [highway] = 'path' or [highway] = 'bridleway') 
+	    <Filter>([highway] = 'footway' or [highway] = 'path') 
 		    and not ([tunnel] = 'yes') 
 		    and ([sac_scale]='demanding_mountain_hiking' 
 		    or [sac_scale]='alpine_hiking') 
@@ -80,7 +80,7 @@
 	    &maxscale_zoom14;
 	    <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="2"/></Rule>
     <Rule>
-	    <Filter>([highway] = 'footway' or [highway] = 'path' or [highway] = 'bridleway') 
+	    <Filter>([highway] = 'footway' or [highway] = 'path') 
 		    and not ([tunnel] = 'yes') 
 		    and ([sac_scale]='demanding_alpine_hiking' 
 		    or [sac_scale]='difficult_alpine_hiking') 
@@ -93,7 +93,7 @@
 	    <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="1,6" stroke-width="2"/></Rule>
     <!-- le cas de tout chemin peu visible sans mention du sac_scale ou "facile"-->
     <Rule>
-	    <Filter>([highway] = 'footway' or [highway] = 'path' or [highway] = 'bridleway') 
+	    <Filter>([highway] = 'footway' or [highway] = 'path') 
 		    and 
 		    (not [sac_scale]='demanding_mountain_hiking' 
 		    and not [sac_scale]='alpine_hiking' 
