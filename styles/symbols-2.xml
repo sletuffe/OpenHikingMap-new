@@ -299,6 +299,20 @@
     <TextSymbolizer fontset-name="sans-oblique" size="10" fill="&poi_blue;" halo-radius="2" halo-fill="rgba(255,255,255,0.7)" placement="point" dy="10" wrap-width="100" wrap-before="true">[ele]</TextSymbolizer>
   </Rule>
   
+  <Rule>
+    &maxscale_zoom14;
+    &minscale_zoom16;
+    <Filter>[amenity] = 'drinking_water'</Filter>
+    <MarkersSymbolizer file="symbols/amenity/drinking_water.svg" width="16" height="16" fill="&poi_blue;"/>
+  </Rule>
+  
+  <Rule>
+    &maxscale_zoom17;
+    <Filter>[amenity] = 'drinking_water'</Filter>
+    <MarkersSymbolizer file="symbols/amenity/drinking_water.svg" width="16" height="16" fill="&poi_blue;"/>
+    <TextSymbolizer fontset-name="sans-oblique" size="10" fill="&poi_blue;" halo-radius="2" halo-fill="rgba(255,255,255,0.7)" placement="point" dy="10" wrap-width="100" wrap-before="true">[ele]</TextSymbolizer>
+  </Rule>
+  
 	<Rule>
 		&maxscale_zoom11;
 		&minscale_zoom13;
