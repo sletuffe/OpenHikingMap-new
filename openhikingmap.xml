@@ -515,7 +515,7 @@
 		<StyleName>symbols-2</StyleName>
 		<StyleName>symbols-poly</StyleName>
 		<Datasource>
-			<Parameter name="table">(SELECT way,access,amenity,highway,historic,"memorial:type",castle_type,religion,denomination,denotation,fee,man_made,"tower:type","communication:radio","communication:television",'('&#124;&#124;substring(height from '^[\d]+')&#124;&#124;')' as height,building,"natural",name,ruins,NULL AS "summit:cross",tourism,"power","generator:source","site_type",leisure,sport,leaf_type,disused,abandoned,railway,otm_isolation::INTEGER,hiking,way_area FROM planet_osm_polygon) AS symbols </Parameter>
+			<Parameter name="table">(SELECT way,access,amenity,highway,historic,"memorial:type",castle_type,religion,denomination,denotation,fee,man_made,"tower:type","communication:radio","communication:television",'('&#124;&#124;substring(height from '^[\d]+')&#124;&#124;')' as height,building,"natural",name,ele,ruins,NULL AS "summit:cross",tourism,"power","generator:source","site_type",leisure,sport,leaf_type,disused,abandoned,railway,otm_isolation::INTEGER,hiking,way_area FROM planet_osm_polygon) AS symbols </Parameter>
 			&postgis-settings;
 		</Datasource>
 	</Layer>
@@ -525,7 +525,7 @@
 		<StyleName>symbols-2</StyleName>
 		<StyleName>symbols-point</StyleName>
 		<Datasource>
-			<Parameter name="table">(SELECT way,access,amenity,highway,historic,"memorial:type",castle_type,leaf_type,religion,denomination,denotation,fee,man_made,"tower:type","communication:radio","communication:television",'('&#124;&#124;substring(height from '^[\d]+')&#124;&#124;')' as height,building,"natural",name,ruins,"summit:cross",tourism,"power","generator:source","site_type",sport,disused,abandoned,railway,train,subway,otm_isolation::INTEGER,hiking FROM planet_osm_point) AS symbols </Parameter>
+			<Parameter name="table">(SELECT way,access,amenity,highway,historic,"memorial:type",castle_type,leaf_type,religion,denomination,denotation,fee,man_made,"tower:type","communication:radio","communication:television",'('&#124;&#124;substring(height from '^[\d]+')&#124;&#124;')' as height,building,"natural",name,ele,ruins,"summit:cross",tourism,"power","generator:source","site_type",sport,disused,abandoned,railway,train,subway,otm_isolation::INTEGER,hiking FROM planet_osm_point) AS symbols </Parameter>
 			&postgis-settings;
 		</Datasource>
 	</Layer>
@@ -557,7 +557,7 @@
 	<Layer name="symbols-viewpoint">
 		<StyleName>symbols-viewpoint</StyleName>
 		<Datasource>
-			<Parameter name="table">(SELECT way,tourism,(int_dir).s1 as firstrotation,(int_dir).a1 as firstangle,(int_dir).s2 as secondrotation,(int_dir).a2 as secondangle FROM (SELECT way,tourism,viewpointdirection(direction) AS int_dir FROM planet_osm_point WHERE (tourism='viewpoint')) AS viewpoints) AS symbols</Parameter>
+			<Parameter name="table">(SELECT way,tourism,(int_dir).s1 as firstrotation,(int_dir).a1 as firstangle,(int_dir).s2 as secondrotation,(int_dir).a2 as secondangle FROM (SELECT way,tourism,viewpointdirection(direction) AS int_dir FROM planet_osm_point WHERE (tourism='viewpoint' AND direction IS NOT NULL)) AS viewpoints) AS symbols</Parameter>
 			&postgis-settings;
 		</Datasource>
 	</Layer>
