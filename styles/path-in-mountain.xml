@@ -17,7 +17,7 @@
       and not [surface] = 'asphalt'
     </Filter>
     &maxscale_zoom14;
-    <LineSymbolizer stroke-linejoin="round" stroke-opacity="1" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="2"/>
+    <LineSymbolizer stroke-linejoin="round" stroke-opacity="1" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="1.8"/>
   </Rule>
   <Rule>
     <Filter>
@@ -27,7 +27,7 @@
       and not [surface] = 'asphalt'
     </Filter>
     &maxscale_zoom14;
-    <LineSymbolizer stroke-linejoin="round" stroke-opacity="1" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="1,6" stroke-width="2"/>
+    <LineSymbolizer stroke-linejoin="round" stroke-opacity="1" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="1,6" stroke-width="1.8"/>
   </Rule>
   <Rule>
     <Filter>
@@ -37,7 +37,7 @@
       and not [surface] = 'asphalt'
     </Filter>
     &maxscale_zoom14;
-    <LineSymbolizer stroke-linejoin="round" stroke="#f12b2b" stroke-width="2" stroke-linecap="round" stroke-opacity="1"/>
+    <LineSymbolizer stroke-linejoin="round" stroke="#f12b2b" stroke-width="1.8" stroke-linecap="round" stroke-opacity="1"/>
   </Rule>
   <Rule>
     <Filter>
@@ -48,7 +48,7 @@
       and not [surface] = 'asphalt'
     </Filter>
     &maxscale_zoom14;
-    <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="2"/>
+    <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="1.8"/>
   </Rule>
   <Rule>
     <Filter>
@@ -59,7 +59,7 @@
       and not [surface] = 'asphalt'
     </Filter>
     &maxscale_zoom14;
-    <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="1,6" stroke-width="2"/>
+    <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="1,6" stroke-width="1.8"/>
   </Rule>
   <Rule>
     <Filter>
@@ -69,7 +69,7 @@
       and not [surface] = 'asphalt'
     </Filter>
     &maxscale_zoom14;
-    <LineSymbolizer stroke-linejoin="round" stroke="#f12b2b" stroke-width="2" stroke-linecap="round" stroke-opacity="0.5"/>
+    <LineSymbolizer stroke-linejoin="round" stroke="#f12b2b" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.5"/>
   </Rule>
   <Rule>
     &maxscale_zoom16;
