@@ -36,6 +36,7 @@
 	<!ENTITY roads-casing-lowzoom SYSTEM "styles/roads-casing-lowzoom.xml">
 	<!ENTITY roads-fill-lowzoom SYSTEM "styles/roads-fill-lowzoom.xml">
   <!ENTITY roads-casing SYSTEM "styles/roads-casing.xml">
+  <!ENTITY tracks SYSTEM "styles/tracks.xml">
   <!ENTITY path-in-mountain SYSTEM "styles/path-in-mountain.xml">
 	<!ENTITY roads-fill SYSTEM "styles/roads-fill.xml">
 	<!ENTITY trams SYSTEM "styles/trams.xml">
@@ -116,7 +117,8 @@
 	&airports-poly;
 	&roads-casing-lowzoom;
 	&roads-fill-lowzoom;
-	&roads-casing;
+  &roads-casing;
+  &tracks;
   &path-in-mountain;
 	&roads-fill;
 	&trams;
@@ -356,8 +358,9 @@
 	</Layer>
 	
 	<Layer name="roads">
-		<StyleName>roads-casing</StyleName>
-		<StyleName>roads-fill</StyleName>
+    <StyleName>roads-casing</StyleName>
+    <StyleName>tracks</StyleName>
+    <StyleName>roads-fill</StyleName>
 		<StyleName>trams</StyleName>
     <StyleName>path-in-mountain</StyleName>
 		<Datasource>
