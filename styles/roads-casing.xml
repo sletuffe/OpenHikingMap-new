@@ -122,6 +122,13 @@
     <Filter>[highway] = 'raceway'</Filter>
     <LineSymbolizer stroke="black" stroke-width="3.5" />
   </Rule>
+  <!-- a tiny line for all footway  -->
+  <Rule>
+    &maxscale_zoom14;
+    &minscale_zoom18;
+    <Filter>[highway] = 'footway'</Filter>
+    <LineSymbolizer stroke="black" stroke-width="0.8" stroke-opacity="0.8"/>
+  </Rule>
   
   <Rule>
     &maxscale_zoom14; &minscale_zoom14;
