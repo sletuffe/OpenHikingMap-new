@@ -1,12 +1,12 @@
 <Style name="symbols-point">
-	
-	<!-- see railway-points for subway icons -->
-	<Rule>
-		&maxscale_zoom16;
-		&minscale_zoom18;
-		<Filter>[railway] = 'station' and [subway] = 'yes'</Filter>
-		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="#5427ff" halo-radius="2" halo-fill="rgba(255,255,255,0.9)" placement="point" dy="7" wrap-width="100" wrap-before="true">[name]</TextSymbolizer>
-	</Rule>
+  
+  <Rule>
+    &maxscale_zoom16;
+    &minscale_zoom18;
+    <Filter>[railway] = 'station' and [subway] = 'yes'</Filter>
+    <TextSymbolizer fontset-name="sans-oblique" size="9" fill="#5427ff" halo-radius="2" halo-fill="rgba(255,255,255,0.9)" placement="point" dy="7" wrap-width="100" wrap-before="true">[name]</TextSymbolizer>
+  </Rule>
+  
   <Rule>
     &maxscale_zoom16;
     &minscale_zoom18;
@@ -14,4 +14,33 @@
     <MarkersSymbolizer file="symbols/barrier/lift_gate.svg" width="14" height="14" fill="black"/>
   </Rule>
   
+  <Rule>
+    &maxscale_zoom16;
+    &minscale_zoom18;
+    <Filter>([leisure] = 'picnic_table') </Filter>
+    <MarkersSymbolizer file="symbols/tourism/picnic_site.svg" width="16" height="16" fill="&poi_blue;"/>
+  </Rule>
+  
+  <Rule>
+    &maxscale_zoom16;
+    &minscale_zoom18;
+    <Filter>[natural] = 'tree'</Filter>
+    <MarkersSymbolizer 
+      placement="point" 
+      marker-type="ellipse" 
+      fill="#b9d984" 
+      width="4" 
+      height="4" 
+      stroke-width="0" />
+    <TextSymbolizer 
+      fontset-name="sans-oblique" 
+      size="8" 
+      fill="#4a6121" 
+      halo-radius="1" 
+      halo-fill="rgba(255,255,255,0.6)" 
+      placement="point" 
+      dy="6" 
+      wrap-width="80">[name]</TextSymbolizer>
+  </Rule>
+    
 </Style>
