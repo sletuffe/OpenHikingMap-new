@@ -1,7 +1,5 @@
-# OpenHikingMap-new
-OpenHikingMap-new is a mapnik 3+ map style using Openstreetmap data focused on Hiking. This style uses OpenTopoMap : https://github.com/sletuffe/OpenTopoMap as a base, extended with several POI mainly used in hiking/trail activities.
-
-As of 2026-01-24 it is still under developpement and there is no demo, it aims at replacing https://wiki.openstreetmap.org/wiki/OpenHikingMap
+# OpenHikingMap
+OpenHikingMap is a mapnik 3+ map style using Openstreetmap data focused on Hiking. This style uses OpenTopoMap : https://github.com/sletuffe/OpenTopoMap as a base, extended with several POI mainly used in hiking/trail activities.
 
 Missing external files can be found :
 
@@ -30,3 +28,7 @@ https://osmdata.openstreetmap.de/data/water-polygons.html
   * Italy – Tinitaly 10m – CC BY 4.0 Tarquini S., I. Isola, M. Favalli, A. Battistini, G. Dotta (2023). Istituto Nazionale di Geofisica e Vulcanologia (INGV).
   * Norway - DTM 10 Terrengmodell (UTM33) – CC BY 4.0 Kartverket
 
+== Help ? ==
+
+Help is well apreciated to improve the style or suggest evolutions and since all the stack to make it work is a bit
+complex to install, I can either provide user access to the server for sandbox testing, or event a Virtual Machine copy for local tests.
