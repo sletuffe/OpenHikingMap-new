@@ -3,43 +3,43 @@
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint') and [firstangle]=60</Filter>
-        <PointSymbolizer file="symbols/viewpoint_60.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_60.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [firstangle]=90)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_90.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_90.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [firstangle]=135)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_135.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_135.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [firstangle]=180)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_180.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_180.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [firstangle]=225)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_225.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_225.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [firstangle]=270)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_270.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_270.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [firstangle]=360)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_360.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_360.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 
 
@@ -47,43 +47,43 @@
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint') and [secondangle]=60</Filter>
-        <PointSymbolizer file="symbols/viewpoint_60.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_60.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [secondangle]=90)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_90.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_90.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [secondangle]=135)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_135.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_135.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [secondangle]=180)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_180.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_180.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [secondangle]=225)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_225.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_225.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [secondangle]=270)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_270.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_270.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<Filter>([tourism] = 'viewpoint' and [secondangle]=360)</Filter>
-        <PointSymbolizer file="symbols/viewpoint_360.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols/tourism/viewpoint_360.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
   <Rule>
     <Filter>[tourism] = 'viewpoint'</Filter>
