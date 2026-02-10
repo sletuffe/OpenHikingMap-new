@@ -40,11 +40,24 @@
     <MarkersSymbolizer file="symbols/amenity/shelter.svg" width="16" height="12" fill="&poi_blue;"/>
     <TextSymbolizer fontset-name="sans-oblique" size="10" fill="&poi_blue;" halo-radius="2" halo-fill="rgba(255,255,255,0.7)" placement="point" dy="10" wrap-width="100" wrap-before="true">[name] + '\n' + [ele]</TextSymbolizer>
   </Rule>
+  
   <Rule>
     &maxscale_zoom16;
     <Filter>[tourism]='information' and [information]='guidepost'</Filter>
     <PointSymbolizer file="symbols/tourism/guidepost.png"/>
     <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+  </Rule>
+  
+  <Rule>
+    &maxscale_zoom16;
+    <Filter>[tourism]='information' and [information]='map'</Filter>
+    <MarkersSymbolizer file="symbols/tourism/map.svg" width="16" height="16" fill="&poi_blue;"/>
+  </Rule>
+  
+  <Rule>
+    &maxscale_zoom16;
+    <Filter>[tourism]='information' and ( [information]='office' or [information]='bord' or [information]='stele') </Filter>
+    <MarkersSymbolizer file="symbols/tourism/information.svg" width="16" height="16" fill="&poi_blue;"/>
   </Rule>
   
   <Rule>
