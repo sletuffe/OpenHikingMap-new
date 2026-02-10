@@ -42,5 +42,20 @@
       dy="6" 
       wrap-width="80">[name]</TextSymbolizer>
   </Rule>
-    
+  <Rule>
+    &maxscale_zoom16;
+    <Filter>[tourism]='information' and [information]='guidepost'</Filter>
+    <PointSymbolizer file="symbols/tourism/guidepost.png"/>
+    <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
+  </Rule>
+  <Rule>
+    &maxscale_zoom16;
+    <Filter>[tourism]='information' and [information]='map'</Filter>
+    <MarkersSymbolizer file="symbols/tourism/map.svg" width="16" height="16" fill="&poi_blue;"/>
+  </Rule>
+  <Rule>
+    &maxscale_zoom16;
+    <Filter>[tourism]='information' and ( [information]='office' or [information]='bord' or [information]='stele') </Filter>
+    <MarkersSymbolizer file="symbols/tourism/information.svg" width="16" height="16" fill="&poi_blue;"/>
+  </Rule>    
 </Style>
