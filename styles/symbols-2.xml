@@ -42,7 +42,7 @@
   </Rule>
   <Rule>
     &maxscale_zoom16;
-    <Filter>[tourism]='information' <!-- FIXME and [information]='guidepost' when the information column gets added--></Filter>
+    <Filter>[tourism]='information' and [information]='guidepost'</Filter>
     <PointSymbolizer file="symbols/tourism/guidepost.png"/>
     <TextSymbolizer size="10" fill="#000" dy="12" fontset-name="sans-oblique" halo-radius="1">[ele]</TextSymbolizer>
   </Rule>
