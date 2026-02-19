@@ -17,7 +17,6 @@
       [highway] = 'path'
       and ([sac_scale]='demanding_mountain_hiking' or [sac_scale]='alpine_hiking') 
       and (not [trail_visibility]='intermediate' and not [trail_visibility]='horrible' and not [trail_visibility]='bad' and not [trail_visibility]='no')
-      and not [surface] = 'asphalt'
     </Filter>
     <LineSymbolizer stroke-linejoin="round" stroke-opacity="1" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="1.8"/>
   </Rule>
@@ -28,7 +27,6 @@
       [highway] = 'path'
       and ([sac_scale]='demanding_alpine_hiking' or [sac_scale]='difficult_alpine_hiking') 
       and (not [trail_visibility]='intermediate' and not [trail_visibility]='horrible' and not [trail_visibility]='bad' and not [trail_visibility]='no')
-      and not [surface] = 'asphalt'
     </Filter>
     <LineSymbolizer stroke-linejoin="round" stroke-opacity="1" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="1,6" stroke-width="1.8"/>
   </Rule>
@@ -39,7 +37,6 @@
       [highway] = 'path' 
       and (not [sac_scale]='demanding_mountain_hiking' and not [sac_scale]='alpine_hiking' and not [sac_scale]='demanding_alpine_hiking' and not [sac_scale]='difficult_alpine_hiking') 
       and (not [trail_visibility]='intermediate' and not [trail_visibility]='horrible' and not [trail_visibility]='bad' and not [trail_visibility]='no')
-      and not [surface] = 'asphalt'
     </Filter>
     <LineSymbolizer stroke-linejoin="round" stroke="#f12b2b" stroke-width="1.8" stroke-linecap="round" stroke-opacity="1"/>
   </Rule>
@@ -51,7 +48,6 @@
       and not ([tunnel] = 'yes') 
       and ([sac_scale]='demanding_mountain_hiking' or [sac_scale]='alpine_hiking') 
       and ([trail_visibility]='intermediate' or [trail_visibility]='bad' or [trail_visibility]='horrible' or [trail_visibility]='no')
-      and not [surface] = 'asphalt'
     </Filter>
     <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="4,8" stroke-width="1.8"/>
   </Rule>
@@ -63,7 +59,6 @@
       and not ([tunnel] = 'yes') 
       and ([sac_scale]='demanding_alpine_hiking' or [sac_scale]='difficult_alpine_hiking') 
       and ([trail_visibility]='intermediate' or [trail_visibility]='bad' or [trail_visibility]='horrible' or [trail_visibility]='no')
-      and not [surface] = 'asphalt'
     </Filter>
     <LineSymbolizer stroke-linejoin="round" stroke-opacity="0.5" stroke="#f12b2b" stroke-linecap="round" stroke-dasharray="1,6" stroke-width="1.8"/>
   </Rule>
@@ -74,7 +69,6 @@
       [highway] = 'path'
       and ([sac_scale]='hiking' or [sac_scale]='mountain_hiking' or [sac_scale] is null) 
       and ([trail_visibility]='intermediate' or [trail_visibility]='horrible' or [trail_visibility]='bad' or [trail_visibility]='no')
-      and not [surface] = 'asphalt'
     </Filter>
     <LineSymbolizer stroke-linejoin="round" stroke="#f12b2b" stroke-width="1.8" stroke-linecap="round" stroke-opacity="0.5"/>
   </Rule>
