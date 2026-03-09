@@ -1,34 +1,52 @@
 <!-- 
-  Hillshaded maps, from zoom 1 to 8 merged with colored one, for zoom 9 and more, hillshades only 
-  Color by altitude will interfer with color of forest, residential, swamp, all natural areas.
+  Hillshaded maps, from zoom 1 to 8 merged with colored by elevation
+  from zoom 9 to 12, hillshade quite dark
+  from 13 to 17, brighter hillshade not to hide too much south slopes dark elements
+  for zoom 18, we don't need it anymore since my hillshade tif are so tough: so no hillshade would be my choice... but everything becomes greyish and not nice
 -->
-<Style name="hillshade">
-	<Rule>
-		&maxscale_zoom9;
-		&minscale_zoom18;
-		<RasterSymbolizer opacity="0.8" comp-op="grain-merge" scaling="bilinear" />
-	</Rule>
+<Style name="colored_hillshade">
+  <Rule>
+    &maxscale_zoom1;
+    &minscale_zoom8;
+    <RasterSymbolizer scaling="bilinear" />
+  </Rule>
 </Style>
-<Layer name="hillshade">
-	<StyleName>hillshade</StyleName>
-	<Datasource>
-		<Parameter name="type">gdal</Parameter>
-		<Parameter name="file">mapnik-data/hillshade/hillshade.tif</Parameter>
-		<Parameter name="format">tiff</Parameter>
-	</Datasource>
+<Layer name="colored_hillshade">
+  <StyleName>colored_hillshade</StyleName>
+  <Datasource>
+    <Parameter name="type">gdal</Parameter>
+    <Parameter name="file">mapnik-data/colored-hillshade/colored_hillshade.tif</Parameter>
+    <Parameter name="format">tiff</Parameter>
+  </Datasource>
 </Layer>
-<Style name="relief">
-	<Rule>
-		&maxscale_zoom1;
-		&minscale_zoom8;
-		<RasterSymbolizer scaling="bilinear" />
-	</Rule>
+<Style name="hillshade_dark">
+  <Rule>
+    &maxscale_zoom9;
+    &minscale_zoom12;
+    <RasterSymbolizer opacity="8" comp-op="grain-merge" scaling="bilinear" />
+  </Rule>
 </Style>
-<Layer name="relief">
-	<StyleName>relief</StyleName>
-	<Datasource>
-		<Parameter name="type">gdal</Parameter>
-		<Parameter name="file">mapnik-data/colored-hillshade/colored_hillshade.tif</Parameter>
-		<Parameter name="format">tiff</Parameter>
-	</Datasource>
+<Style name="hillshade_bright">
+    <Rule>
+    &maxscale_zoom13;
+    &minscale_zoom18;
+    <RasterSymbolizer opacity="8" comp-op="grain-merge" scaling="bilinear" />
+  </Rule>
+</Style>
+
+<Layer name="hillshade_dark">
+  <StyleName>hillshade_dark</StyleName>
+  <Datasource>
+    <Parameter name="type">gdal</Parameter>
+    <Parameter name="file">mapnik-data/hillshade/hillshade_dark.tif</Parameter>
+    <Parameter name="format">tiff</Parameter>
+  </Datasource>
+</Layer>
+<Layer name="hillshade_bright">
+  <StyleName>hillshade_bright</StyleName>
+  <Datasource>
+    <Parameter name="type">gdal</Parameter>
+    <Parameter name="file">mapnik-data/hillshade/hillshade_bright.tif</Parameter>
+    <Parameter name="format">tiff</Parameter>
+  </Datasource>
 </Layer>
